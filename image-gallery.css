@@ -1,0 +1,165 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: .0;
+  transition: .1s ease;
+  background:rgba(0, 0, 0, 0.5);
+}
+
+.container :hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  align-items: center;
+}
+
+
+
+.container {
+  width: 100%;
+  display: grid;
+  grid-auto-flow: dense;
+  grid-template:  "1fr 1fr 1fr 1fr 1fr 1fr 1fr" 20vh
+                  "1fr 1fr 1fr 1fr 1fr 1fr 1fr" 20vh
+                  "1fr 1fr 1fr 1fr 1fr 1fr 1fr" 20vh
+                  "1fr 1fr 1fr 1fr 1fr 1fr 1fr" 20vh
+                  "1fr 1fr 1fr 1fr 1fr 1fr 1fr" 20vh;
+                  grid-gap: 5px;
+}
+.container .box {
+  position: relative;
+  /* background: grey; */
+}
+
+.container .box.o {
+  grid-row: span 2;
+}
+
+.container .box.l {
+  grid-row: span 2;
+}
+.continer .box.k{
+  grid-row: span 2;
+}
+.continer .box.f {
+  grid-row: span 2;
+}
+.container .box.a {
+  
+  grid-row: span 2;
+}
+.container .box.c {
+  grid-row: span 2;
+}
+.container .box.e {
+  grid-row: span 2;
+}
+.container .box.j {
+  grid-column: span 2;
+}
+.container .box.b {
+  grid-column: span 2;
+}
+.container .box.d {
+  grid-column: span 2;
+}
+.container .box.p {
+  grid-row: span 2;
+}
+.container .box.q {
+  grid-column: span 2;
+}
+.container .box.r {
+  grid-column: span 2;
+}
+
+
+
+
+
+.container .box img{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+@media (max-width: 991px)
+{
+  .container {
+    
+    grid-template:  "1fr 1fr 1fr 1fr" 250px
+                    "1fr 1fr 1fr 1fr" 250px
+                    "1fr 1fr 1fr 1fr" 250px
+                    "1fr 1fr 1fr 1fr" 250px
+                    "1fr 1fr 1fr 1fr" 250px;
+    
+  }
+}
+
+@media (max-width: 768px)
+{
+  .container {
+    
+    grid-template:  "1fr 1fr  1fr" 200px
+                    "1fr 1fr  1fr" 200px
+                    "1fr 1fr  1fr" 200px
+                    "1fr 1fr  1fr" 200px
+                    "1fr 1fr  1fr" 200px
+                    "1fr 1fr  1fr" 200px
+                    "1fr 1fr  1fr" 200px;
+    
+  }
+}
+@media (max-width: 500px)
+{
+  .container {
+    
+    grid-template:  "1fr  1fr " 150px
+                    "1fr   1fr" 150px
+                    "1fr   1fr" 150px
+                    "1fr   1fr" 150px
+                    "1fr   1fr" 150px
+                    "1fr   1fr" 150px
+                    "1fr   1fr" 150px;
+    
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
